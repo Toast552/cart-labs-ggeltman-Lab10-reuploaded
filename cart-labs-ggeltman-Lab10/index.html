@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Cart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/styles.css">
+    <script src="assets/scripts.js" async></script>
+</head>
+<body>
+    <header>
+        <button id="darkmode" onclick="darkMode()">Dark Mode</button>
+        <h1>All the Nice Things</h1>
+        <div id="cart">
+            <img src="assets/imgs/cart.png">
+            <span class="hoverText">0$</span>
+            <p id="cartItems">&nbsp;</p>
+            <button id="checkout" onclick="checkout()">Checkout Now</button>
+        </div>
+    </header>
+    <main>
+        <h2>Try Our Cookies</h2>
+        <div class="container">
+        <section class="tile">
+            <img src="assets/imgs/peanutbutter.jpg">
+            <h3>Peanut Butter</h3>
+            <p>Peanut butter cookies are rich and gooey.</p>
+            <p>$20</p>
+            <button onclick="addToCart('peanut butter')">Add to Cart</button>
+        </section>
+        <section class="tile">
+            <img src="assets/imgs/sandies.jpg">
+            <h3>Sandies</h3>
+            <p>Sandies are sweet and light.</p>
+            <p>$30</p>
+            <button onclick="addToCart('sandies')">Add to Cart</button>
+        </section>
+        <section class="tile">
+            <img src="assets/imgs/partypress.jpg">
+            <h3>Party Press</h3>
+            <p>Parties Press cookies are decorative and tasty.</p>
+            <p>$35</p>
+            <button onclick="addToCart('party press')">Add to Cart</button>
+        </section>
+        <section class="tile">
+            <img src="assets/imgs/chocolatechip.jpg">
+            <h3>Chocolate Chip</h3>
+            <p></p>Chocolate chip cookies with walnuts are soft and chocolatey.</p>
+            <p>$25</p>
+            <button onclick="addToCart('chocolate chip')">Add to Cart</button>
+        </section>
+    </div>
+    </main>
+</body>
+</html>

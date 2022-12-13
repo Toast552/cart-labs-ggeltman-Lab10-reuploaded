@@ -1,0 +1,91 @@
+header {
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+#cart img{
+    max-width: 80px;
+}
+#cart p {
+    color: red;
+    font-weight: bold;
+    margin: 0px;
+}
+#cart .hoverText {
+    visibility: hidden;
+    background-color: white;
+    color: #000;
+    text-align: center;
+    padding: 5px;
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    right: 30%; 
+    z-index: 1;
+}
+#cart .hoverText::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+}
+#cart:hover .hoverText {
+    visibility: visible;
+}
+h1 {
+    position: relative;
+    margin-left: auto;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+}
+section.tile {
+    margin: 20px auto;
+}
+section.tile img {
+    width: 85%;
+    max-width: 500px;
+}
+
+@media (min-width: 1000px) {
+    header {
+        position: relative; 
+        height: 125px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    header::before {
+        content: "";
+        background-image: url("imgs/cookies.jpg");
+        background-size: cover;
+        border-radius: 15px;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0.65;
+    }
+    header button {
+        position: relative;
+        margin-left: 10px;
+    }
+    #cart {
+        position: relative;
+        margin-left: auto;
+        margin-right: 10px;;
+        text-align: center;
+    }
+    .container {
+        flex-direction: row;
+    }
+    
+}
